@@ -101,7 +101,7 @@ def generateValidData(batch_size,data=[]):
         for i in (range(len(data))):  
             url = data[i]
             batch += 1  
-            img = load_img(filepath + 'train/' + url) 
+            img = load_img(filepath + 'train/' + url)
             img = img_to_array(img)  
             valid_data.append(img)  
             label = load_img(filepath + 'label/' + url, grayscale=True)
